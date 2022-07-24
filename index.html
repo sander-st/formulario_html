@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="http://localhost/packages/Normalize.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <div class="form__box__container">
+      <!-- title and logo formulario -->
+      <div class="form__box__title">
+        <div class="form__logo"><i class="fas fa-edit"></i><span class="bg__fill"></span></div>
+        <h2 class="form__title">Create Your Account</h2>
+      </div>
+
+      <form action="" class="form__box">
+        <!-- group fullname -->
+        <div class="form__group">
+          <label for="fullname">Full name</label>
+          <div class="form__group__input">
+            <input type="text" name="fullname" class="form__input" id="fullname" autofocus required>
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <p class="form_error_description">El usuario tiene que ser de 4 a mas dígitos y solo puede contener numeros, letras y guion bajo.</p>
+        </div>
+        <!-- group email addres -->
+        <div class="form__group">
+          <label for="email">Email addres</label>
+          <div class="form__group__input">
+            <input type="email" name="email" id="email" class="form__input" required>
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <p class="form_error_description">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+        </div>
+        <!-- group password -->
+        <div class="form__group">
+          <label for="passwd">Password</label>
+          <div class="form__group__input">
+            <input type="password" name="passwd" id="passwd" class="form__input">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <p class="form_error_description">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+        </div>
+        <!-- group confirm password -->
+        <div class="form__group">
+          <label for="passwd_confirm">Confirm password</label>
+          <div class="form__group__input">
+            <input type="password" name="passwd_confirm" id="passwd_confirm" class="form__input">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <p class="form_error_description">tu contraseña no coinciden.</p>
+        </div>
+        <!-- group checkbox -->
+        <div class="form__group">
+          <input type="checkbox" name="terms" id="terms" class="form__input_checkbox">
+          <label for="terms" class="terms">I Agree All Statements In Terms Of Service.</label>
+        </div>
+        <!-- group button -->
+        <div class="form__group">
+          <p class="form_error_description" data-error="error"><i class="fas fa-exclamation-triangle"></i>Verifica que todos los campos esten rellenados.</p>
+          <div class="form__group__input">
+            <input type="submit" value="Sign Up" class="form__input">
+          </div>
+        </div>
+        <!-- group login -->
+        <div class="form__group">
+          <p>I'm already a member!<a href="#">Sign In</a></p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="http://localhost/packages/fontawesome.js"></script>
+</body>
+</html>
